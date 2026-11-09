@@ -12,13 +12,7 @@
     "postinstall": "node scripts/setup.cjs",
     "test": "node --test test/unit/*.test.js",
     "test:coverage": "node --experimental-test-coverage --test test/unit/*.test.js",
-    "test:lab": "node --test test/lab/*.test.js",
-    "test:reverse-shell": "node --test test/integration/reverse-shell.test.js",
-    "lab:listener": "node lab/listener.js",
     "example": "node examples/jobs.js"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "ws": "8.22.2"
-  }
+  "license": "MIT"
 }
