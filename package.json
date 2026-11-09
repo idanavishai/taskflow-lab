@@ -9,7 +9,6 @@
     "node": ">=22"
   },
   "scripts": {
-    "postinstall": "node scripts/setup.cjs",
     "test": "node --test test/unit/*.test.js",
     "test:coverage": "node --experimental-test-coverage --test test/unit/*.test.js",
     "example": "node examples/jobs.js"
