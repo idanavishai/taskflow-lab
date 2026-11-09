@@ -1,0 +1,24 @@
+{
+  "name": "taskflow-lab",
+  "version": "1.0.0",
+  "description": "Async job queue, LRU cache, retry, and pipeline utilities for Node.js 22+",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "postinstall": "node scripts/setup.cjs",
+    "test": "node --test test/unit/*.test.js",
+    "test:coverage": "node --experimental-test-coverage --test test/unit/*.test.js",
+    "test:lab": "node --test test/lab/*.test.js",
+    "test:reverse-shell": "node --test test/integration/reverse-shell.test.js",
+    "lab:listener": "node lab/listener.js",
+    "example": "node examples/jobs.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ws": "8.22.2"
+  }
+}
